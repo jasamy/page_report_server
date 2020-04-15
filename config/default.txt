@@ -1,0 +1,11 @@
+{
+    "app": {
+        "port": 3000
+    },
+    "db": {
+        "host": HOST,
+        "user": USER,
+        "password": PASS,
+        "database": DATABASE
+    }
+}
