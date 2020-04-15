@@ -15,6 +15,6 @@ app.get("/data", (req, res, next) => {
 })
 
 app.listen(config.get('app.port'), () => {
-    console.log(`App listening to Port 3000....`)
+    console.log(`App listening to Port ${config.get('app.port')}....`)
     console.log('Press Ctrl+C to quit.')
 })
