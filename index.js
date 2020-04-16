@@ -1,7 +1,10 @@
 const express = require('express')
+const cors = require('cors');
 const config = require('config')
 const dbConn = require('./lib/db')
 const app = express()
+
+app.use(cors());
 
 app.get("/data", (req, res, next) => {
     res.set("content-type", "application/json")
