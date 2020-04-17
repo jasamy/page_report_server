@@ -1,7 +1,11 @@
 const express = require('express')
-const cors = require('cors');
+const cors = require('cors')
 const config = require('config')
+
 const dbConn = require('./lib/db')
+// sequelize db connection
+const db = require("./app/models")
+db.sequelize.sync()
 const app = express()
 
 app.use(cors());

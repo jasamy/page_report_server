@@ -1,0 +1,1 @@
+const Model = Sequelize.Model;
